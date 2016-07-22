@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_PokePartyShared, ______Target_pokeparty_sharedTestSuite);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        __PBXFileRef_PokePartyShared_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'PokePartyShared_Info.plist';
+            path = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_PokePartyShared = {
+            isa = PBXGroup;
+            name = PokePartyShared;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/PokePartyShared.swift', __PBXFileRef_PokePartyShared_Info.plist);
+        };
+        '__PBXFileRef_Sources/PokePartyShared.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'PokePartyShared.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_PokePartyShared = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_PokePartyShared;
+            buildPhases = (CompilePhase_PokePartyShared, ___LinkPhase_PokePartyShared);
+            buildRules = ();
+            dependencies = ();
+            name = PokePartyShared;
+            productName = PokePartyShared;
+            productReference = _____Product_PokePartyShared;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_PokePartyShared = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'PokePartyShared.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_PokePartyShared = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/PokePartyShared.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/PokePartyShared.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/PokePartyShared.swift';
+        };
+        ___LinkPhase_PokePartyShared = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_PokePartyShared = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_PokePartyShared, _ReleaseConf_PokePartyShared);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_PokePartyShared = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Debug;
+        };
+        _ReleaseConf_PokePartyShared = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Release;
+        };
+        __Dependency_PokePartyShared = {
+            isa = PBXTargetDependency;
+            target = ______Target_PokePartyShared;
+        };
+        __PBXFileRef_pokeparty_sharedTestSuite_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'pokeparty_sharedTestSuite_Info.plist';
+            path = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_pokeparty_sharedTestSuite = {
+            isa = PBXGroup;
+            name = pokeparty-sharedTestSuite;
+            path = 'Tests/pokeparty-shared';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift', __PBXFileRef_pokeparty_sharedTestSuite_Info.plist);
+        };
+        '__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'PokePartySharedTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_pokeparty_sharedTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_pokeparty_sharedTestSuite;
+            buildPhases = (CompilePhase_pokeparty_sharedTestSuite, ___LinkPhase_pokeparty_sharedTestSuite);
+            buildRules = ();
+            dependencies = ();
+            name = pokeparty-sharedTestSuite;
+            productName = pokeparty_sharedTestSuite;
+            productReference = _____Product_pokeparty_sharedTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_pokeparty_sharedTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'pokeparty_sharedTestSuite.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_pokeparty_sharedTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift';
+        };
+        ___LinkPhase_pokeparty_sharedTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_pokeparty_sharedTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_pokeparty_sharedTestSuite, _ReleaseConf_pokeparty_sharedTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_pokeparty_sharedTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_pokeparty_sharedTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_pokeparty_sharedTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_pokeparty_sharedTestSuite;
+        };
+        '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'PokePartyShared.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_PokePartyShared);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_pokeparty_sharedTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_pokeparty_sharedTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_PokePartyShared);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
