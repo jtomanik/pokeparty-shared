@@ -1,5 +1,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "PokePartyShared"
+    name: "PokePartyShared",
+    dependencies: [
+        .Package(url: "https://github.com/IBM-Swift/SwiftyJSON.git", majorVersion: 9)
+    ]
 )

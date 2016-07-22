@@ -8,8 +8,12 @@
 
 import Foundation
 
+protocol BackendConfig: URLType {
 
-struct Backend: URLType {
+    var host: String { get }
+}
+
+extension BackendConfig {
 
     var host: String {
       return "pokeparty.rocks"

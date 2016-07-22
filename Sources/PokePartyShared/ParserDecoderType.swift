@@ -19,7 +19,7 @@ extension ParserDecoderType where ParsedType == JsonType {
 
     static func parse(body: PayloadType?) -> Parsable? {
         guard let body = body else {
-            Log.error(AdapterError.parserDecoderTypeNilBody)
+            //Log.error(AdapterError.parserDecoderTypeNilBody)
             return nil
         }
         switch body {
@@ -32,7 +32,7 @@ extension ParserDecoderType where ParsedType == JsonType {
                 return decode(raw: JSON(dict as AnyObject))
             #endif
         default:
-            Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
+            //Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
             return nil
         }
     }
@@ -42,14 +42,14 @@ extension ParserDecoderType where ParsedType == DictionaryType {
 
     static func parse(body: PayloadType?) -> Parsable? {
         guard let body = body else {
-            Log.error(AdapterError.parserDecoderTypeNilBody.description)
+            //Log.error(AdapterError.parserDecoderTypeNilBody.description)
             return nil
         }
         switch body {
         case .urlEncoded(let dict):
             return decode(raw: dict)
         default:
-            Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
+            //Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
             return nil
         }
     }
@@ -65,7 +65,7 @@ extension ParserDecoderType where ParsedType == TextType {
         case .text(let text):
             return decode(raw: text)
         default:
-            Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
+            //Log.debug(AdapterError.parserDecoderTypeUnsupportedBodyType)
             return nil
         }
     }

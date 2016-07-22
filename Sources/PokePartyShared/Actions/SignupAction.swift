@@ -9,20 +9,20 @@
 import Foundation
 import SwiftyJSON
 
-enum SignupAction: Action, URLType {
+enum SignupAction: Action {
 
     case googleAuth
     case userSetup
 
-    static func from(route: String?) -> PokePartyAction? {
+    static func from(route: String?) -> SignupAction? {
         guard let route = route else {
             return nil
         }
         switch route {
-        case let r where r.startsWith(prefix: PokePartyAction.googleAuth.route):
-            return PokePartyAction.googleAuth
-        case let r where r.startsWith(prefix: PokePartyAction.userSetup.route):
-            return PokePartyAction.userSetup
+        case let r where r.startsWith(prefix: SignupAction.googleAuth.route):
+            return SignupAction.googleAuth
+        case let r where r.startsWith(prefix: SignupAction.userSetup.route):
+            return SignupAction.userSetup
         default:
             return nil
         }

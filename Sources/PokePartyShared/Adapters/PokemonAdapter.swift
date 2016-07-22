@@ -7,19 +7,20 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct PokemonAdapter: ParserDecoderType {
+struct PokemonParser: ParserDecoderType {
 
     typealias Parsable = Pokemon
     typealias ParsedType = JsonType
 
     static func decode(raw: ParsedType) -> Parsable? {
-        Log.debug(raw.description)
+        //Log.debug(raw.description)
         if let number = raw["number"].int,
             combatPower = raw["combat_power"].int {
             return Pokemon(number: number, combatPower: combatPower)
         } else {
-            Log.debug(AdapterError.parserFailedDecoding)
+            //Log.debug(AdapterError.parserFailedDecoding)
             return nil
         }
     }
@@ -28,7 +29,7 @@ struct PokemonAdapter: ParserDecoderType {
 extension PokemonParser: ParserEncoderType {
 
     static func encode(model: Parsable) -> ParsedType? {
-        var dictionary = [String: String]()
+        var dictionary = [String: Int]()
         dictionary["number"] = model.number
         dictionary["combat_power"] = model.combatPower
 

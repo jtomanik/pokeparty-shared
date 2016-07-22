@@ -19,10 +19,10 @@ extension ParserEncoderType where ParsedType == JsonType {
 
     static func parse(model: Parsable) -> PayloadType? {
         guard let json = encode(model: model) else {
-            Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
+            //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil
         }
-        return ParsedBody.json(json)
+        return PayloadType.json(json)
     }
 }
 
@@ -30,10 +30,10 @@ extension ParserEncoderType where ParsedType == DictionaryType {
 
     static func parse(model: Parsable) -> PayloadType? {
         guard let dict = encode(model: model) else {
-            Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
+            //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil
         }
-        return ParsedBody.urlEncoded(dict)
+        return PayloadType.urlEncoded(dict)
     }
 }
 
@@ -41,9 +41,9 @@ extension ParserEncoderType where ParsedType == TextType {
 
     static func parse(model: Parsable) -> PayloadType? {
         guard let text = encode(model: model) else {
-            Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
+            //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil
         }
-        return ParsedBody.text(text)
+        return PayloadType.text(text)
     }
 }

@@ -38,8 +38,4 @@ public enum Method: String {
     case connect = "CONNECT"
     case error = "ERROR"
     case unknown = "UNKNOWN"
-
-    init(fromRawValue: String){
-        self = RouterMethod(rawValue: fromRawValue) ?? .unknown
-    }
 }
