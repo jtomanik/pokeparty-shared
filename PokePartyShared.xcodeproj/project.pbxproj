@@ -1,232 +1,379 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {};
-    objectVersion = 46;
-    rootObject = __RootObject_;
-    objects = {
-        __RootObject_ = {
-            isa = PBXProject;
-            attributes = {LastUpgradeCheck = 9999;};
-            buildConfigurationList = ___RootConfs_;
-            compatibilityVersion = 'Xcode 3.2';
-            developmentRegion = English;
-            hasScannedForEncodings = 0;
-            knownRegions = (en);
-            mainGroup = ___RootGroup_;
-            productRefGroup = ____Products_;
-            projectDirPath = '';
-            projectRoot = '';
-            targets = (______Target_PokePartyShared, ______Target_pokeparty_sharedTestSuite);
-        };
-        '__PBXFileRef_Package.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'Package.swift';
-            path = 'Package.swift';
-            sourceTree = '<group>';
-        };
-        ___RootGroup_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
-            sourceTree = '<group>';
-        };
-        __PBXFileRef_PokePartyShared_Info.plist = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.plist.xml;
-            name = 'PokePartyShared_Info.plist';
-            path = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist';
-            sourceTree = SOURCE_ROOT;
-        };
-        _______Group_PokePartyShared = {
-            isa = PBXGroup;
-            name = PokePartyShared;
-            path = 'Sources';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Sources/PokePartyShared.swift', __PBXFileRef_PokePartyShared_Info.plist);
-        };
-        '__PBXFileRef_Sources/PokePartyShared.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'PokePartyShared.swift';
-            sourceTree = '<group>';
-        };
-        ______Target_PokePartyShared = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_PokePartyShared;
-            buildPhases = (CompilePhase_PokePartyShared, ___LinkPhase_PokePartyShared);
-            buildRules = ();
-            dependencies = ();
-            name = PokePartyShared;
-            productName = PokePartyShared;
-            productReference = _____Product_PokePartyShared;
-            productType = 'com.apple.product-type.framework';
-        };
-        _____Product_PokePartyShared = {
-            isa = PBXFileReference;
-            explicitFileType = 'wrapper.framework';
-            path = 'PokePartyShared.framework';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_PokePartyShared = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Sources/PokePartyShared.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Sources/PokePartyShared.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Sources/PokePartyShared.swift';
-        };
-        ___LinkPhase_PokePartyShared = {
-            isa = PBXFrameworksBuildPhase;
-            files = ();
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _______Confs_PokePartyShared = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_PokePartyShared, _ReleaseConf_PokePartyShared);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_PokePartyShared = {
-            isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
-            name = Debug;
-        };
-        _ReleaseConf_PokePartyShared = {
-            isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/PokePartyShared_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
-            name = Release;
-        };
-        __Dependency_PokePartyShared = {
-            isa = PBXTargetDependency;
-            target = ______Target_PokePartyShared;
-        };
-        __PBXFileRef_pokeparty_sharedTestSuite_Info.plist = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.plist.xml;
-            name = 'pokeparty_sharedTestSuite_Info.plist';
-            path = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist';
-            sourceTree = SOURCE_ROOT;
-        };
-        _______Group_pokeparty_sharedTestSuite = {
-            isa = PBXGroup;
-            name = pokeparty-sharedTestSuite;
-            path = 'Tests/pokeparty-shared';
-            sourceTree = '<group>';
-            children = ('__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift', __PBXFileRef_pokeparty_sharedTestSuite_Info.plist);
-        };
-        '__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift' = {
-            isa = PBXFileReference;
-            lastKnownFileType = sourcecode.swift;
-            name = 'PokePartySharedTests.swift';
-            sourceTree = '<group>';
-        };
-        ______Target_pokeparty_sharedTestSuite = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_pokeparty_sharedTestSuite;
-            buildPhases = (CompilePhase_pokeparty_sharedTestSuite, ___LinkPhase_pokeparty_sharedTestSuite);
-            buildRules = ();
-            dependencies = ();
-            name = pokeparty-sharedTestSuite;
-            productName = pokeparty_sharedTestSuite;
-            productReference = _____Product_pokeparty_sharedTestSuite;
-            productType = 'com.apple.product-type.bundle.unit-test';
-        };
-        _____Product_pokeparty_sharedTestSuite = {
-            isa = PBXFileReference;
-            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
-            path = 'pokeparty_sharedTestSuite.xctest';
-            sourceTree = BUILT_PRODUCTS_DIR;
-        };
-        CompilePhase_pokeparty_sharedTestSuite = {
-            isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift');
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        '__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift' = {
-            isa = PBXBuildFile;
-            fileRef = '__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift';
-        };
-        ___LinkPhase_pokeparty_sharedTestSuite = {
-            isa = PBXFrameworksBuildPhase;
-            files = ();
-            runOnlyForDeploymentPostprocessing = 0;
-        };
-        _______Confs_pokeparty_sharedTestSuite = {
-            isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_pokeparty_sharedTestSuite, _ReleaseConf_pokeparty_sharedTestSuite);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-        ___DebugConf_pokeparty_sharedTestSuite = {
-            isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
-            name = Debug;
-        };
-        _ReleaseConf_pokeparty_sharedTestSuite = {
-            isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; INFOPLIST_FILE = 'PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
-            name = Release;
-        };
-        __Dependency_pokeparty_sharedTestSuite = {
-            isa = PBXTargetDependency;
-            target = ______Target_pokeparty_sharedTestSuite;
-        };
-        '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig' = {
-            isa = PBXFileReference;
-            lastKnownFileType = text.xcconfig;
-            name = 'Project.xcconfig';
-            path = 'PokePartyShared.xcodeproj/Configs/Project.xcconfig';
-            sourceTree = '<group>';
-        };
-        _____Configs_ = {
-            isa = PBXGroup;
-            children = ('__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig');
-            name = Configs;
-            sourceTree = '<group>';
-        };
-        _____Sources_ = {
-            isa = PBXGroup;
-            children = (_______Group_PokePartyShared);
-            name = Sources;
-            sourceTree = '<group>';
-        };
-        _______Tests_ = {
-            isa = PBXGroup;
-            children = (_______Group_pokeparty_sharedTestSuite);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-       TestProducts_ = {
-            isa = PBXGroup;
-            children = (_____Product_pokeparty_sharedTestSuite);
-            name = Tests;
-            sourceTree = '<group>';
-        };
-        ____Products_ = {
-            isa = PBXGroup;
-            children = (TestProducts_, _____Product_PokePartyShared);
-            name = Products;
-            sourceTree = '<group>';
-        };
-        _______Debug_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig';
-            buildSettings = {};
-            name = Debug;
-        };
-        _____Release_ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig';
-            buildSettings = {};
-            name = Release;
-        };
-        ___RootConfs_ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (_______Debug_, _____Release_);
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Debug;
-        };
-    };
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1DECE91D428E6E00967B00 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECD61D428E6E00967B00 /* Action.swift */; };
+		BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECD81D428E6E00967B00 /* SignupAction.swift */; };
+		BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */; };
+		BE1DECEC1D428E6E00967B00 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDB1D428E6E00967B00 /* Backend.swift */; };
+		BE1DECED1D428E6E00967B00 /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDC1D428E6E00967B00 /* Linux.swift */; };
+		BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDD1D428E6E00967B00 /* Method.swift */; };
+		BE1DECEF1D428E6E00967B00 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDF1D428E6E00967B00 /* Pokemon.swift */; };
+		BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */; };
+		BE1DECF11D428E6E00967B00 /* ParserEncoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE11D428E6E00967B00 /* ParserEncoderType.swift */; };
+		BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE21D428E6E00967B00 /* ParserType.swift */; };
+		BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE31D428E6E00967B00 /* PayloadType.swift */; };
+		BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */; };
+		BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */; };
+		BE1DECF61D428E6E00967B00 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */; };
+		BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE81D428E6E00967B00 /* URLType.swift */; };
+		"__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE1DECD61D428E6E00967B00 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BE1DECD81D428E6E00967B00 /* SignupAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
+		BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAdapter.swift; sourceTree = "<group>"; };
+		BE1DECDB1D428E6E00967B00 /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		BE1DECDC1D428E6E00967B00 /* Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linux.swift; sourceTree = "<group>"; };
+		BE1DECDD1D428E6E00967B00 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		BE1DECDF1D428E6E00967B00 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserDecoderType.swift; sourceTree = "<group>"; };
+		BE1DECE11D428E6E00967B00 /* ParserEncoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserEncoderType.swift; sourceTree = "<group>"; };
+		BE1DECE21D428E6E00967B00 /* ParserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserType.swift; sourceTree = "<group>"; };
+		BE1DECE31D428E6E00967B00 /* PayloadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadType.swift; sourceTree = "<group>"; };
+		BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokePartyShared.swift; sourceTree = "<group>"; };
+		BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
+		BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		BE1DECE81D428E6E00967B00 /* URLType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = PokePartyShared.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		"__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokePartySharedTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_pokeparty_sharedTestSuite_Info.plist /* pokeparty_sharedTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = pokeparty_sharedTestSuite_Info.plist; path = PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
+		"_____Product_PokePartyShared" /* PokePartyShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PokePartyShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = pokeparty_sharedTestSuite.xctest; path = "pokeparty-sharedTestSuite.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_PokePartyShared" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_pokeparty_sharedTestSuite" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE1DECD51D428E6E00967B00 /* PokePartyShared */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECD61D428E6E00967B00 /* Action.swift */,
+				BE1DECD71D428E6E00967B00 /* Actions */,
+				BE1DECD91D428E6E00967B00 /* Adapters */,
+				BE1DECDB1D428E6E00967B00 /* Backend.swift */,
+				BE1DECDC1D428E6E00967B00 /* Linux.swift */,
+				BE1DECDD1D428E6E00967B00 /* Method.swift */,
+				BE1DECDE1D428E6E00967B00 /* Model */,
+				BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */,
+				BE1DECE11D428E6E00967B00 /* ParserEncoderType.swift */,
+				BE1DECE21D428E6E00967B00 /* ParserType.swift */,
+				BE1DECE31D428E6E00967B00 /* PayloadType.swift */,
+				BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */,
+				BE1DECE51D428E6E00967B00 /* SwiftyJSON */,
+				BE1DECE81D428E6E00967B00 /* URLType.swift */,
+			);
+			name = PokePartyShared;
+			path = Sources/PokePartyShared;
+			sourceTree = "<group>";
+		};
+		BE1DECD71D428E6E00967B00 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECD81D428E6E00967B00 /* SignupAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		BE1DECD91D428E6E00967B00 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		BE1DECDE1D428E6E00967B00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECDF1D428E6E00967B00 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE1DECE51D428E6E00967B00 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */,
+				BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_PokePartyShared" /* PokePartyShared.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BE1DECD51D428E6E00967B00 /* PokePartyShared */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */,
+				__PBXFileRef_pokeparty_sharedTestSuite_Info.plist /* pokeparty_sharedTestSuite_Info.plist */,
+			);
+			name = "pokeparty-sharedTestSuite";
+			path = "Tests/pokeparty-shared";
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_PokePartyShared" /* PokePartyShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_PokePartyShared" /* Build configuration list for PBXNativeTarget "PokePartyShared" */;
+			buildPhases = (
+				CompilePhase_PokePartyShared /* Sources */,
+				"___LinkPhase_PokePartyShared" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokePartyShared;
+			productName = PokePartyShared;
+			productReference = "_____Product_PokePartyShared" /* PokePartyShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_pokeparty_sharedTestSuite" /* Build configuration list for PBXNativeTarget "pokeparty-sharedTestSuite" */;
+			buildPhases = (
+				CompilePhase_pokeparty_sharedTestSuite /* Sources */,
+				"___LinkPhase_pokeparty_sharedTestSuite" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pokeparty-sharedTestSuite";
+			productName = pokeparty_sharedTestSuite;
+			productReference = "_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "PokePartyShared" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_PokePartyShared" /* PokePartyShared */,
+				"______Target_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_PokePartyShared /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				BE1DECEF1D428E6E00967B00 /* Pokemon.swift in Sources */,
+				BE1DECEC1D428E6E00967B00 /* Backend.swift in Sources */,
+				BE1DECE91D428E6E00967B00 /* Action.swift in Sources */,
+				BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */,
+				BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */,
+				BE1DECF61D428E6E00967B00 /* SwiftyJSON.swift in Sources */,
+				BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */,
+				BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */,
+				BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */,
+				BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */,
+				BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */,
+				BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */,
+				BE1DECF11D428E6E00967B00 /* ParserEncoderType.swift in Sources */,
+				BE1DECED1D428E6E00967B00 /* Linux.swift in Sources */,
+				BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_pokeparty_sharedTestSuite /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_PokePartyShared /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_pokeparty_sharedTestSuite /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		"___DebugConf_PokePartyShared" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_pokeparty_sharedTestSuite" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "PokePartyShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_PokePartyShared" /* Build configuration list for PBXNativeTarget "PokePartyShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_PokePartyShared" /* Debug */,
+				_ReleaseConf_PokePartyShared /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_pokeparty_sharedTestSuite" /* Build configuration list for PBXNativeTarget "pokeparty-sharedTestSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_pokeparty_sharedTestSuite" /* Debug */,
+				_ReleaseConf_pokeparty_sharedTestSuite /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
 }
