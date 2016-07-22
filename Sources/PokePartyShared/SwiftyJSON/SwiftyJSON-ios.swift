@@ -20,6 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+#if os(iOS)
+
 import Foundation
 
 // MARK: - Error
@@ -1374,3 +1376,5 @@ func >=(lhs: NSNumber, rhs: NSNumber) -> Bool {
         return lhs.compare(rhs) != NSComparisonResult.OrderedAscending
     }
 }
+
+#endif
