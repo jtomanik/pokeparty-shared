@@ -30,9 +30,9 @@ public enum SignupAction: Action {
     public var path: String {
         switch self {
         case .googleAuth:
-            return "api/v1/signup/auth"
+            return PokePartyAction.signup.path + "/auth"
         case .userSetup:
-            return "api/v1/signup/setup"
+            return PokePartyAction.signup.path + "/setup"
         }
     }
 
