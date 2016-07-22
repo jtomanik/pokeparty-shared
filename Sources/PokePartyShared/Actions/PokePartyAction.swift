@@ -12,13 +12,13 @@ public enum PokePartyAction: Action {
 
     case signup
 
-    public static func from(route: String?) -> Action? {
+    public static func from(route: String?) -> PokePartyAction? {
         guard let route = route else {
             return nil
         }
         switch route {
         case let r where r.startsWith(prefix: PokePartyAction.signup.route):
-            return SignupAction.from(route: route)
+            return PokePartyAction.signup
         default:
             return nil
         }
