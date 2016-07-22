@@ -7,6 +7,9 @@
 //
 
 import Foundation
+#if os(Linux) || os(OSX)
+import SwiftyJSON
+#endif
 
 typealias JsonType = JSON
 typealias DictionaryType = [String: String]

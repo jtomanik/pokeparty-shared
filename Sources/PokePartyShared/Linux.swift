@@ -76,7 +76,7 @@ extension Dictionary {
 
 extension String {
 
-    func startsWith(prefix: String) -> Bool {
+    func startsWith(prefix prefix: String) -> Bool {
         return self.hasPrefix(prefix)
     }
 }
