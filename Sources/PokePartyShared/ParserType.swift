@@ -11,11 +11,11 @@ import Foundation
 import SwiftyJSON
 #endif
 
-typealias JsonType = JSON
-typealias DictionaryType = [String: String]
-typealias TextType = String
+public typealias JsonType = JSON
+public typealias DictionaryType = [String: String]
+public typealias TextType = String
 
-protocol ParserType {
+public protocol ParserType {
 
     associatedtype Parsable
     associatedtype ParsedType

@@ -11,13 +11,13 @@ import Foundation
     import SwiftyJSON
 #endif
 
-protocol ParserDecoderType: ParserType {
+public protocol ParserDecoderType: ParserType {
 
     static func parse(body body: PayloadType?) -> Parsable?
     static func decode(raw raw: ParsedType) -> Parsable?
 }
 
-extension ParserDecoderType where ParsedType == JsonType {
+public extension ParserDecoderType where ParsedType == JsonType {
 
     static func parse(body body: PayloadType?) -> Parsable? {
         guard let body = body else {
@@ -40,7 +40,7 @@ extension ParserDecoderType where ParsedType == JsonType {
     }
 }
 
-extension ParserDecoderType where ParsedType == DictionaryType {
+public extension ParserDecoderType where ParsedType == DictionaryType {
 
     static func parse(body body: PayloadType?) -> Parsable? {
         guard let body = body else {
@@ -57,7 +57,7 @@ extension ParserDecoderType where ParsedType == DictionaryType {
     }
 }
 
-extension ParserDecoderType where ParsedType == TextType {
+public extension ParserDecoderType where ParsedType == TextType {
 
     static func parse(body: PayloadType?) -> Parsable? {
         guard let body = body else {

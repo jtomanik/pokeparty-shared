@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol ParserEncoderType: ParserType {
+public protocol ParserEncoderType: ParserType {
 
     static func parse(model model: Parsable) -> PayloadType?
     static func encode(model model: Parsable) -> ParsedType?
 }
 
-extension ParserEncoderType where ParsedType == JsonType {
+public extension ParserEncoderType where ParsedType == JsonType {
 
     static func parse(model model: Parsable) -> PayloadType? {
         guard let json = encode(model: model) else {
@@ -25,7 +25,7 @@ extension ParserEncoderType where ParsedType == JsonType {
     }
 }
 
-extension ParserEncoderType where ParsedType == DictionaryType {
+public extension ParserEncoderType where ParsedType == DictionaryType {
 
     static func parse(model model: Parsable) -> PayloadType? {
         guard let dict = encode(model: model) else {
@@ -36,7 +36,7 @@ extension ParserEncoderType where ParsedType == DictionaryType {
     }
 }
 
-extension ParserEncoderType where ParsedType == TextType {
+public extension ParserEncoderType where ParsedType == TextType {
 
     static func parse(model model: Parsable) -> PayloadType? {
         guard let text = encode(model: model) else {

@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum URLSchema: String {
+public enum URLSchema: String {
     case http = "http"
     case https = "https"
 }
 
-protocol URLType {
+public protocol URLType {
 
     /*
      This protocol abstracts URL,
@@ -31,7 +31,7 @@ protocol URLType {
     var absoluteString: String { get }
 }
 
-extension URLType {
+public extension URLType {
 
     var scheme: URLSchema {
         return .http

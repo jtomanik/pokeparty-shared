@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol Action: BackendConfig {
+public protocol Action: BackendConfig {
 
     var method: Method { get }
     var route: String { get }
 }
 
-extension Action {
+public extension Action {
 
     var route: String {
         return "/" + self.path

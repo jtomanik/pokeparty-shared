@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct Pokemon {
+public struct Pokemon {
     let number: Int
     let combatPower: Int
+
+    public init(number: Int, combatPower: Int){
+        self.number = number
+        self.combatPower = combatPower
+    }
 }

@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum SignupAction: Action {
+public enum SignupAction: Action {
 
     case googleAuth
     case userSetup
 
-    static func from(route: String?) -> SignupAction? {
+    public static func from(route: String?) -> SignupAction? {
         guard let route = route else {
             return nil
         }
@@ -27,7 +27,7 @@ enum SignupAction: Action {
         }
     }
 
-    var path: String {
+    public var path: String {
         switch self {
         case .googleAuth:
             return "api/v1/signup/auth"
@@ -36,7 +36,7 @@ enum SignupAction: Action {
         }
     }
 
-    var method: Method {
+    public var method: Method {
         switch self {
         case .googleAuth:
             return .get
