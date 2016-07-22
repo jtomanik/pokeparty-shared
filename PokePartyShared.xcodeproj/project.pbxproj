@@ -18,7 +18,6 @@
 		BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE21D428E6E00967B00 /* ParserType.swift */; };
 		BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE31D428E6E00967B00 /* PayloadType.swift */; };
 		BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */; };
-		BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */; };
 		BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE81D428E6E00967B00 /* URLType.swift */; };
 		BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */; };
 		BE1DECFF1D42912100967B00 /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFE1D42912100967B00 /* Linux.swift */; };
@@ -37,7 +36,6 @@
 		BE1DECE21D428E6E00967B00 /* ParserType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserType.swift; sourceTree = "<group>"; };
 		BE1DECE31D428E6E00967B00 /* PayloadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadType.swift; sourceTree = "<group>"; };
 		BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokePartyShared.swift; sourceTree = "<group>"; };
-		BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
 		BE1DECE81D428E6E00967B00 /* URLType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
 		BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON-ios.swift"; sourceTree = "<group>"; };
 		BE1DECFE1D42912100967B00 /* Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linux.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */,
-				BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
@@ -253,7 +250,6 @@
 				BE1DECEF1D428E6E00967B00 /* Pokemon.swift in Sources */,
 				BE1DECEC1D428E6E00967B00 /* Backend.swift in Sources */,
 				BE1DECE91D428E6E00967B00 /* Action.swift in Sources */,
-				BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */,
 				BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */,
 				BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */,
 				BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */,
