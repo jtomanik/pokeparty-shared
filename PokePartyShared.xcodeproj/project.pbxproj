@@ -21,6 +21,10 @@
 		BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE81D428E6E00967B00 /* URLType.swift */; };
 		BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */; };
 		BE1DECFF1D42912100967B00 /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFE1D42912100967B00 /* Linux.swift */; };
+		BEC49F471D42C3E0000106E4 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49F461D42C3E0000106E4 /* Team.swift */; };
+		BEC49F491D42C87B000106E4 /* PokePartyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49F481D42C87B000106E4 /* PokePartyAction.swift */; };
+		BEC49F4B1D42CA77000106E4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49F4A1D42CA77000106E4 /* User.swift */; };
+		BEC49F4D1D42CB32000106E4 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49F4C1D42CB32000106E4 /* Party.swift */; };
 		"__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		BE1DECE81D428E6E00967B00 /* URLType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
 		BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON-ios.swift"; sourceTree = "<group>"; };
 		BE1DECFE1D42912100967B00 /* Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linux.swift; sourceTree = "<group>"; };
+		BEC49F461D42C3E0000106E4 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		BEC49F481D42C87B000106E4 /* PokePartyAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokePartyAction.swift; sourceTree = "<group>"; };
+		BEC49F4A1D42CA77000106E4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BEC49F4C1D42CB32000106E4 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = PokePartyShared.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		"__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokePartySharedTests.swift; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 		BE1DECD71D428E6E00967B00 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				BEC49F481D42C87B000106E4 /* PokePartyAction.swift */,
 				BE1DECD81D428E6E00967B00 /* SignupAction.swift */,
 			);
 			path = Actions;
@@ -106,7 +115,10 @@
 		BE1DECDE1D428E6E00967B00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEC49F4A1D42CA77000106E4 /* User.swift */,
 				BE1DECDF1D428E6E00967B00 /* Pokemon.swift */,
+				BEC49F461D42C3E0000106E4 /* Team.swift */,
+				BEC49F4C1D42CB32000106E4 /* Party.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,12 +265,16 @@
 				BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */,
 				BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */,
 				BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */,
+				BEC49F471D42C3E0000106E4 /* Team.swift in Sources */,
+				BEC49F4B1D42CA77000106E4 /* User.swift in Sources */,
 				BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */,
 				BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */,
+				BEC49F4D1D42CB32000106E4 /* Party.swift in Sources */,
 				BE1DECFF1D42912100967B00 /* Linux.swift in Sources */,
 				BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */,
 				BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */,
 				BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */,
+				BEC49F491D42C87B000106E4 /* PokePartyAction.swift in Sources */,
 				BE1DECF11D428E6E00967B00 /* ParserEncoderType.swift in Sources */,
 				BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */,
 			);
@@ -278,11 +294,13 @@
 		_ReleaseConf_PokePartyShared /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = tooploox.apps.PokePartyShared;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 			};
@@ -302,11 +320,13 @@
 		"___DebugConf_PokePartyShared" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = tooploox.apps.PokePartyShared;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
