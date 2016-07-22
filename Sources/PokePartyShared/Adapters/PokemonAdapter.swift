@@ -11,7 +11,7 @@ import Foundation
     import SwiftyJSON
 #endif
 
-public struct PokemonParser: ParserDecoderType {
+public struct PokemonAdapter: ParserDecoderType {
 
     public typealias Parsable = Pokemon
     public typealias ParsedType = JsonType
@@ -28,7 +28,7 @@ public struct PokemonParser: ParserDecoderType {
     }
 }
 
-extension PokemonParser: ParserEncoderType {
+extension PokemonAdapter: ParserEncoderType {
 
     public static func encode(model model: Parsable) -> ParsedType? {
         var dictionary = [String: Int]()
