@@ -10,13 +10,13 @@ import Foundation
 
 protocol ParserDecoderType: ParserType {
 
-    static func parse(body: PayloadType?) -> Parsable?
-    static func decode(raw: ParsedType) -> Parsable?
+    static func parse(body body: PayloadType?) -> Parsable?
+    static func decode(raw raw: ParsedType) -> Parsable?
 }
 
 extension ParserDecoderType where ParsedType == JsonType {
 
-    static func parse(body: PayloadType?) -> Parsable? {
+    static func parse(body body: PayloadType?) -> Parsable? {
         guard let body = body else {
             //Log.error(AdapterError.parserDecoderTypeNilBody)
             return nil
@@ -39,7 +39,7 @@ extension ParserDecoderType where ParsedType == JsonType {
 
 extension ParserDecoderType where ParsedType == DictionaryType {
 
-    static func parse(body: PayloadType?) -> Parsable? {
+    static func parse(body body: PayloadType?) -> Parsable? {
         guard let body = body else {
             //Log.error(AdapterError.parserDecoderTypeNilBody.description)
             return nil

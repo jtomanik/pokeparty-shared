@@ -10,13 +10,13 @@ import Foundation
 
 protocol ParserEncoderType: ParserType {
 
-    static func parse(model: Parsable) -> PayloadType?
-    static func encode(model: Parsable) -> ParsedType?
+    static func parse(model model: Parsable) -> PayloadType?
+    static func encode(model model: Parsable) -> ParsedType?
 }
 
 extension ParserEncoderType where ParsedType == JsonType {
 
-    static func parse(model: Parsable) -> PayloadType? {
+    static func parse(model model: Parsable) -> PayloadType? {
         guard let json = encode(model: model) else {
             //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil
@@ -27,7 +27,7 @@ extension ParserEncoderType where ParsedType == JsonType {
 
 extension ParserEncoderType where ParsedType == DictionaryType {
 
-    static func parse(model: Parsable) -> PayloadType? {
+    static func parse(model model: Parsable) -> PayloadType? {
         guard let dict = encode(model: model) else {
             //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil
@@ -38,7 +38,7 @@ extension ParserEncoderType where ParsedType == DictionaryType {
 
 extension ParserEncoderType where ParsedType == TextType {
 
-    static func parse(model: Parsable) -> PayloadType? {
+    static func parse(model model: Parsable) -> PayloadType? {
         guard let text = encode(model: model) else {
             //Log.debug(AdapterError.parserEncoderTypeFailedEncoding)
             return nil

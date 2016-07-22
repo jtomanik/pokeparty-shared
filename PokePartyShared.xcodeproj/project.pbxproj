@@ -11,7 +11,6 @@
 		BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECD81D428E6E00967B00 /* SignupAction.swift */; };
 		BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */; };
 		BE1DECEC1D428E6E00967B00 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDB1D428E6E00967B00 /* Backend.swift */; };
-		BE1DECED1D428E6E00967B00 /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDC1D428E6E00967B00 /* Linux.swift */; };
 		BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDD1D428E6E00967B00 /* Method.swift */; };
 		BE1DECEF1D428E6E00967B00 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDF1D428E6E00967B00 /* Pokemon.swift */; };
 		BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */; };
@@ -20,8 +19,9 @@
 		BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE31D428E6E00967B00 /* PayloadType.swift */; };
 		BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */; };
 		BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */; };
-		BE1DECF61D428E6E00967B00 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */; };
 		BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECE81D428E6E00967B00 /* URLType.swift */; };
+		BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */; };
+		BE1DECFF1D42912100967B00 /* Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECFE1D42912100967B00 /* Linux.swift */; };
 		"__src_cc_ref_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,6 @@
 		BE1DECD81D428E6E00967B00 /* SignupAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
 		BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAdapter.swift; sourceTree = "<group>"; };
 		BE1DECDB1D428E6E00967B00 /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
-		BE1DECDC1D428E6E00967B00 /* Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linux.swift; sourceTree = "<group>"; };
 		BE1DECDD1D428E6E00967B00 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		BE1DECDF1D428E6E00967B00 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserDecoderType.swift; sourceTree = "<group>"; };
@@ -39,14 +38,15 @@
 		BE1DECE31D428E6E00967B00 /* PayloadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadType.swift; sourceTree = "<group>"; };
 		BE1DECE41D428E6E00967B00 /* PokePartyShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokePartyShared.swift; sourceTree = "<group>"; };
 		BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
-		BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		BE1DECE81D428E6E00967B00 /* URLType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
+		BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON-ios.swift"; sourceTree = "<group>"; };
+		BE1DECFE1D42912100967B00 /* Linux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linux.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_PokePartyShared.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = PokePartyShared.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		"__PBXFileRef_Tests/pokeparty-shared/PokePartySharedTests.swift" /* PokePartySharedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokePartySharedTests.swift; sourceTree = "<group>"; };
 		__PBXFileRef_pokeparty_sharedTestSuite_Info.plist /* pokeparty_sharedTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = pokeparty_sharedTestSuite_Info.plist; path = PokePartyShared.xcodeproj/pokeparty_sharedTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
 		"_____Product_PokePartyShared" /* PokePartyShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PokePartyShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = pokeparty_sharedTestSuite.xctest; path = "pokeparty-sharedTestSuite.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "pokeparty-sharedTestSuite.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +70,11 @@
 		BE1DECD51D428E6E00967B00 /* PokePartyShared */ = {
 			isa = PBXGroup;
 			children = (
+				BE1DECFE1D42912100967B00 /* Linux.swift */,
 				BE1DECD61D428E6E00967B00 /* Action.swift */,
 				BE1DECD71D428E6E00967B00 /* Actions */,
 				BE1DECD91D428E6E00967B00 /* Adapters */,
 				BE1DECDB1D428E6E00967B00 /* Backend.swift */,
-				BE1DECDC1D428E6E00967B00 /* Linux.swift */,
 				BE1DECDD1D428E6E00967B00 /* Method.swift */,
 				BE1DECDE1D428E6E00967B00 /* Model */,
 				BE1DECE01D428E6E00967B00 /* ParserDecoderType.swift */,
@@ -116,8 +116,8 @@
 		BE1DECE51D428E6E00967B00 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				BE1DECFC1D42907D00967B00 /* SwiftyJSON-ios.swift */,
 				BE1DECE61D428E6E00967B00 /* LclJSONSerialization.swift */,
-				BE1DECE71D428E6E00967B00 /* SwiftyJSON.swift */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				"_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */,
+				"_____Product_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite.xctest */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			);
 			name = "pokeparty-sharedTestSuite";
 			productName = pokeparty_sharedTestSuite;
-			productReference = "_____Product_pokeparty_sharedTestSuite" /* pokeparty_sharedTestSuite.xctest */;
+			productReference = "_____Product_pokeparty_sharedTestSuite" /* pokeparty-sharedTestSuite.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,6 +226,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"______Target_PokePartyShared" = {
+						DevelopmentTeam = 89T2GE89HD;
+					};
+				};
 			};
 			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "PokePartyShared" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -255,15 +260,15 @@
 				BE1DECE91D428E6E00967B00 /* Action.swift in Sources */,
 				BE1DECF51D428E6E00967B00 /* LclJSONSerialization.swift in Sources */,
 				BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */,
-				BE1DECF61D428E6E00967B00 /* SwiftyJSON.swift in Sources */,
 				BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */,
+				BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */,
 				BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */,
 				BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */,
+				BE1DECFF1D42912100967B00 /* Linux.swift in Sources */,
 				BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */,
 				BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */,
 				BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */,
 				BE1DECF11D428E6E00967B00 /* ParserEncoderType.swift in Sources */,
-				BE1DECED1D428E6E00967B00 /* Linux.swift in Sources */,
 				BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +287,8 @@
 		_ReleaseConf_PokePartyShared /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -289,6 +296,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -306,6 +314,8 @@
 		"___DebugConf_PokePartyShared" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = PokePartyShared.xcodeproj/PokePartyShared_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -313,6 +323,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;

@@ -18,9 +18,9 @@ enum SignupAction: Action {
             return nil
         }
         switch route {
-        case let r where r.startsWith(prefix: SignupAction.googleAuth.route):
+        case let r where r.startsWith(SignupAction.googleAuth.route):
             return SignupAction.googleAuth
-        case let r where r.startsWith(prefix: SignupAction.userSetup.route):
+        case let r where r.startsWith(SignupAction.userSetup.route):
             return SignupAction.userSetup
         default:
             return nil

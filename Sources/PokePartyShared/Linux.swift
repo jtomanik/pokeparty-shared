@@ -10,6 +10,8 @@ import Foundation
 
 // Linux compability helpers, that should not be neccesery in Swift preview 1
 
+#if os(Linux)
+
 extension Sequence where Iterator.Element == String {
     
     func joinedBy(separator: String) -> String {
@@ -69,3 +71,14 @@ extension Dictionary {
         return mutableCopy
     }
 }
+
+#else
+
+extension String {
+
+    func startsWith(prefix: String) -> Bool {
+        return self.hasPrefix(prefix)
+    }
+}
+
+#endif
