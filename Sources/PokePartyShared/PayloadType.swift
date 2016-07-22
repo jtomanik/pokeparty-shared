@@ -6,7 +6,6 @@
 //
 //
 
-import SwiftyJSON
 import Foundation
 
 //// MARK: ParsedBody

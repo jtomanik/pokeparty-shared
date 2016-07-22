@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 
 typealias JsonType = JSON
 typealias DictionaryType = [String: String]
