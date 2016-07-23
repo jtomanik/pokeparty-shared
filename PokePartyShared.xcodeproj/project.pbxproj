@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB96C811D435DD800EB90AD /* EventAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C7E1D435DD800EB90AD /* EventAction.swift */; };
+		8BB96C821D435DD800EB90AD /* PartyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C7F1D435DD800EB90AD /* PartyAction.swift */; };
+		8BB96C831D435DD800EB90AD /* PokePartyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C801D435DD800EB90AD /* PokePartyAction.swift */; };
+		8BB96C881D435E0F00EB90AD /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C841D435E0F00EB90AD /* Event.swift */; };
+		8BB96C891D435E0F00EB90AD /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C851D435E0F00EB90AD /* Party.swift */; };
+		8BB96C8A1D435E0F00EB90AD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C861D435E0F00EB90AD /* Team.swift */; };
+		8BB96C8B1D435E0F00EB90AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C871D435E0F00EB90AD /* User.swift */; };
+		8BB96C921D435E2000EB90AD /* DetailedEventAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C8C1D435E2000EB90AD /* DetailedEventAdapter.swift */; };
+		8BB96C931D435E2000EB90AD /* DetailedPartyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C8D1D435E2000EB90AD /* DetailedPartyAdapter.swift */; };
+		8BB96C941D435E2000EB90AD /* EventAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C8E1D435E2000EB90AD /* EventAdapter.swift */; };
+		8BB96C951D435E2000EB90AD /* PartyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C8F1D435E2000EB90AD /* PartyAdapter.swift */; };
+		8BB96C961D435E2000EB90AD /* TeamAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C901D435E2000EB90AD /* TeamAdapter.swift */; };
+		8BB96C971D435E2000EB90AD /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96C911D435E2000EB90AD /* UserAdapter.swift */; };
 		BE1DECE91D428E6E00967B00 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECD61D428E6E00967B00 /* Action.swift */; };
 		BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECD81D428E6E00967B00 /* SignupAction.swift */; };
 		BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */; };
@@ -25,6 +38,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BB96C7E1D435DD800EB90AD /* EventAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAction.swift; sourceTree = "<group>"; };
+		8BB96C7F1D435DD800EB90AD /* PartyAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyAction.swift; sourceTree = "<group>"; };
+		8BB96C801D435DD800EB90AD /* PokePartyAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokePartyAction.swift; sourceTree = "<group>"; };
+		8BB96C841D435E0F00EB90AD /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8BB96C851D435E0F00EB90AD /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		8BB96C861D435E0F00EB90AD /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		8BB96C871D435E0F00EB90AD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BB96C8C1D435E2000EB90AD /* DetailedEventAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedEventAdapter.swift; sourceTree = "<group>"; };
+		8BB96C8D1D435E2000EB90AD /* DetailedPartyAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPartyAdapter.swift; sourceTree = "<group>"; };
+		8BB96C8E1D435E2000EB90AD /* EventAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAdapter.swift; sourceTree = "<group>"; };
+		8BB96C8F1D435E2000EB90AD /* PartyAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyAdapter.swift; sourceTree = "<group>"; };
+		8BB96C901D435E2000EB90AD /* TeamAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamAdapter.swift; sourceTree = "<group>"; };
+		8BB96C911D435E2000EB90AD /* UserAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
 		BE1DECD61D428E6E00967B00 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		BE1DECD81D428E6E00967B00 /* SignupAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupAction.swift; sourceTree = "<group>"; };
 		BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonAdapter.swift; sourceTree = "<group>"; };
@@ -90,6 +116,9 @@
 		BE1DECD71D428E6E00967B00 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				8BB96C7E1D435DD800EB90AD /* EventAction.swift */,
+				8BB96C7F1D435DD800EB90AD /* PartyAction.swift */,
+				8BB96C801D435DD800EB90AD /* PokePartyAction.swift */,
 				BE1DECD81D428E6E00967B00 /* SignupAction.swift */,
 			);
 			path = Actions;
@@ -98,6 +127,12 @@
 		BE1DECD91D428E6E00967B00 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				8BB96C8C1D435E2000EB90AD /* DetailedEventAdapter.swift */,
+				8BB96C8D1D435E2000EB90AD /* DetailedPartyAdapter.swift */,
+				8BB96C8E1D435E2000EB90AD /* EventAdapter.swift */,
+				8BB96C8F1D435E2000EB90AD /* PartyAdapter.swift */,
+				8BB96C901D435E2000EB90AD /* TeamAdapter.swift */,
+				8BB96C911D435E2000EB90AD /* UserAdapter.swift */,
 				BE1DECDA1D428E6E00967B00 /* PokemonAdapter.swift */,
 			);
 			path = Adapters;
@@ -106,6 +141,10 @@
 		BE1DECDE1D428E6E00967B00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8BB96C841D435E0F00EB90AD /* Event.swift */,
+				8BB96C851D435E0F00EB90AD /* Party.swift */,
+				8BB96C861D435E0F00EB90AD /* Team.swift */,
+				8BB96C871D435E0F00EB90AD /* User.swift */,
 				BE1DECDF1D428E6E00967B00 /* Pokemon.swift */,
 			);
 			path = Model;
@@ -247,20 +286,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				8BB96C961D435E2000EB90AD /* TeamAdapter.swift in Sources */,
+				8BB96C941D435E2000EB90AD /* EventAdapter.swift in Sources */,
 				BE1DECEF1D428E6E00967B00 /* Pokemon.swift in Sources */,
 				BE1DECEC1D428E6E00967B00 /* Backend.swift in Sources */,
 				BE1DECE91D428E6E00967B00 /* Action.swift in Sources */,
 				BE1DECF31D428E6E00967B00 /* PayloadType.swift in Sources */,
 				BE1DECEE1D428E6E00967B00 /* Method.swift in Sources */,
 				BE1DECFD1D42907D00967B00 /* SwiftyJSON-ios.swift in Sources */,
+				8BB96C951D435E2000EB90AD /* PartyAdapter.swift in Sources */,
+				8BB96C811D435DD800EB90AD /* EventAction.swift in Sources */,
+				8BB96C891D435E0F00EB90AD /* Party.swift in Sources */,
+				8BB96C8A1D435E0F00EB90AD /* Team.swift in Sources */,
 				BE1DECEB1D428E6E00967B00 /* PokemonAdapter.swift in Sources */,
 				BE1DECF41D428E6E00967B00 /* PokePartyShared.swift in Sources */,
 				BE1DECFF1D42912100967B00 /* Linux.swift in Sources */,
+				8BB96C881D435E0F00EB90AD /* Event.swift in Sources */,
+				8BB96C831D435DD800EB90AD /* PokePartyAction.swift in Sources */,
+				8BB96C821D435DD800EB90AD /* PartyAction.swift in Sources */,
 				BE1DECEA1D428E6E00967B00 /* SignupAction.swift in Sources */,
+				8BB96C971D435E2000EB90AD /* UserAdapter.swift in Sources */,
 				BE1DECF71D428E6E00967B00 /* URLType.swift in Sources */,
 				BE1DECF21D428E6E00967B00 /* ParserType.swift in Sources */,
+				8BB96C921D435E2000EB90AD /* DetailedEventAdapter.swift in Sources */,
 				BE1DECF11D428E6E00967B00 /* ParserEncoderType.swift in Sources */,
 				BE1DECF01D428E6E00967B00 /* ParserDecoderType.swift in Sources */,
+				8BB96C8B1D435E0F00EB90AD /* User.swift in Sources */,
+				8BB96C931D435E2000EB90AD /* DetailedPartyAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +335,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = tooploox.apps.PokePartyShared;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 			};
@@ -307,6 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = tooploox.apps.PokePartyShared;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
