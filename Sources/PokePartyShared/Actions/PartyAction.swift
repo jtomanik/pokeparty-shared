@@ -53,7 +53,7 @@ public enum PartyAction: Action {
             // returns Party (with hash property)
             return .get
         case .join:
-            // ..join?hash=HASH
+            // ..join?hash=HASH&user=JOININGUSERID
             // returns PARTY
             return .get
         case .details:

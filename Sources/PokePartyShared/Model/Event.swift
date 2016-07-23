@@ -10,13 +10,13 @@ import Foundation
 
 public struct Event {
 
-    public let id: String?
-    public let hash: String?
+    public var id: String?
+    public var hash: String?
     public let name: String
     public let ownerId: String
-    public let memberIds: [String]
+    public var memberIds: [String]
 
-    public init(id: String? = nil, hash: String? = nil, name: String, ownerId: String, memberIds: [String]) {
+    public init(id: String? = nil, hash: String? = nil, name: String, ownerId: String, memberIds: [String] = [String]()) {
         self.id = id
         self.hash = hash
         self.name = name
@@ -28,17 +28,21 @@ public struct Event {
 
 public struct DetailedEvent {
 
-    public let id: String?
-    public let hash: String?
+    public var id: String?
+    public var hash: String?
     public let name: String
     public let owner: User
-    public let members: [User]
+    public var members: [User]
 
-    public init(id: String? = nil, hash: String?, name: String, owner: User, members: [User]) {
+    public init(id: String? = nil, hash: String?, name: String, owner: User, members: [User] = [User]()) {
         self.id = id
         self.hash = hash
         self.name = name
         self.owner = owner
         self.members = members
+    }
+
+    public var event: Event {
+        return Event(id: self.id, hash: self.hash, name: self.name, ownerId: self.owner.id, memberIds: self.members.map({ $0.id }))
     }
 }

@@ -10,8 +10,8 @@ import Foundation
 
 public struct Pokemon {
 
-    public let number: Int
-    public let combatPower: Int
+    public var number: Int
+    public var combatPower: Int
 
     public init(number: Int, combatPower: Int) {
         self.number = number
