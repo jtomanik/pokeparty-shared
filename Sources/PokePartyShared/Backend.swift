@@ -16,6 +16,10 @@ public protocol BackendConfig: URLType {
 public extension BackendConfig {
 
     var host: String {
-      return "pokeparty.rocks"
+      return "104.154.53.1"
+    }
+
+    var port: Int? {
+        return 8090
     }
 }
