@@ -54,17 +54,24 @@ extension UserAdapter: ParserEncoderType {
         json["username"].string = model.username
         json["team"] = TeamAdapter.encode(model: model.team) ?? JSON.null
         json["level"].int = model.level
-        let jsonArray = model.pokemons.flatMap({ PokemonAdapter.encode(model: $0) })
-        //json["pokemons"].arrayObject = jsonArray.map { element in
-        //    #if os(Linux)
-        //        return element as Any
-        //    #else
-        //        return element as AnyObject
-        //    #endif
-        //}
-        for i in 0..<jsonArray.count {
-            json["pokemons"][i] = jsonArray[i]
+
+        #if os(Linux)
+            json["members"].arrayObject = [Any]()
+        #else
+            json["members"].arrayObject = [AnyObject]()
+        #endif
+
+        for i in 0..<model.pokemons.count {
+            if let jsonString = PokemonAdapter.encode(model: model.pokemons[i])?.description {
+                #if os(Linux)
+                    var member = jsonString as Any
+                #else
+                    var member = jsonString as AnyObject
+                #endif
+                json["members"].arrayObject?.append(member)
+            }
         }
+
         json["avatar_url"].string = model.avatarUrl
         json["party"] = PartyAdapter.encode(model: model.party) ?? JSON.null
 

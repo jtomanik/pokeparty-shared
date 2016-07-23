@@ -66,6 +66,7 @@ extension PartyAdapter: ParserEncoderType {
             #endif
             json["members_ids"].arrayObject?.append(member)
         }
+
         return json
     }
 }

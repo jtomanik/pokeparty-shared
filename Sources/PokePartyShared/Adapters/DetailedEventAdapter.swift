@@ -58,10 +58,23 @@ extension DetailedEventAdapter: ParserEncoderType {
         json["id"].string = model.id
         json["hash"].string = model.hash
 
-        let jsonArray: [JSON] = model.members.flatMap({ UserAdapter.encode(model: $0) })
-        for i in 0..<jsonArray.count {
-            json["members"][i] = jsonArray[i]
+        #if os(Linux)
+            json["members"].arrayObject = [Any]()
+        #else
+            json["members"].arrayObject = [AnyObject]()
+        #endif
+
+        for i in 0..<model.members.count {
+            if let jsonString = UserAdapter.encode(model: model.members[i])?.description {
+                #if os(Linux)
+                    var member = jsonString as Any
+                #else
+                    var member = jsonString as AnyObject
+                #endif
+                json["members"].arrayObject?.append(member)
+            }
         }
+
         return json
     }
 }
