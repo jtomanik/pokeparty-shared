@@ -20,5 +20,5 @@ public extension Action {
         return "/" + self.path
     }
 
-    var method: Method { return .get }
+    var method: Method { return .all }
 }

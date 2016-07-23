@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Method: String {
+public enum Method: String, Equatable {
     case all = "ALL"
     case get = "GET"
     case post = "POST"
@@ -38,4 +38,19 @@ public enum Method: String {
     case connect = "CONNECT"
     case error = "ERROR"
     case unknown = "UNKNOWN"
+
+    public init?(string: String) {
+        self.init(rawValue: string)
+    }
+}
+
+public func ==(lhs: Method, rhs: Method) -> Bool {
+    switch (lhs, rhs) {
+    case (.all, _):
+        return true
+    case (_, .all):
+        return true
+    default:
+        return lhs.rawValue == rhs.rawValue
+    }
 }
