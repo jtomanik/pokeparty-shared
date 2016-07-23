@@ -57,9 +57,9 @@ extension UserAdapter: ParserEncoderType {
         json["level"].int = model.level
 
         #if os(Linux)
-            json["members"].arrayObject = [Any]()
+            json["pokemons"].arrayObject = [Any]()
         #else
-            json["members"].arrayObject = [AnyObject]()
+            json["pokemons"].arrayObject = [AnyObject]()
         #endif
 
         for i in 0..<model.pokemons.count {
@@ -69,7 +69,7 @@ extension UserAdapter: ParserEncoderType {
                 #else
                     var member = jsonString as AnyObject
                 #endif
-                json["members"].arrayObject?.append(member)
+                json["pokemons"].arrayObject?.append(member)
             }
         }
 
