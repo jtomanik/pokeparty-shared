@@ -6,6 +6,8 @@
 //
 //
 
+public typealias Base64String = String
+
 import Foundation
 
 public struct User {
@@ -17,7 +19,9 @@ public struct User {
     public var avatarUrl: String?
     public var party: Party?
 
-    public init(id: String, username: String? = nil, team: Team? = nil, level: Int = 1, pokemons: [Pokemon] = [], avatarUrl: String? = nil, party: Party? = nil) {
+    public var notificationId: Base64String?
+
+    public init(id: String, username: String? = nil, team: Team? = nil, level: Int = 1, pokemons: [Pokemon] = [], avatarUrl: String? = nil, party: Party? = nil, notificationId: Base64String? = nil) {
         self.id = id
         self.username = username
         self.team = team
@@ -25,5 +29,6 @@ public struct User {
         self.pokemons = pokemons
         self.avatarUrl = avatarUrl
         self.party = party
+        self.notificationId = notificationId
     }
 }

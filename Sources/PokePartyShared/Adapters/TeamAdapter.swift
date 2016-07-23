@@ -1,8 +1,8 @@
 //
-//  PokemonAdapter.swift
+//  TeamAdapter.swift
 //  PokePartyShared
 //
-//  Created by Jakub Tomanik on 22/07/16.
+//  Created by Jakub Tomanik on 23/07/16.
 //
 //
 
@@ -11,18 +11,18 @@ import Foundation
     import SwiftyJSON
 #endif
 
-public struct PokemonAdapter: ParserDecoderType {
+public struct TeamAdapter: ParserDecoderType {
 
-    public typealias Parsable = Pokemon
+    public typealias Parsable = Team
     public typealias ParsedType = JsonType
 
     public static func decode(raw raw: ParsedType?) -> Parsable? {
         guard let raw = raw else {
             return nil
         }
-        if let number = raw["number"].int,
-            combatPower = raw["combat_power"].int {
-            return Pokemon(number: number, combatPower: combatPower)
+        //Log.debug(raw.description)
+        if let no = raw["name"].int {
+            return Team(rawValue: no)
         } else {
             //Log.debug(AdapterError.parserFailedDecoding)
             return nil
@@ -30,20 +30,21 @@ public struct PokemonAdapter: ParserDecoderType {
     }
 }
 
-extension PokemonAdapter: ParserEncoderType {
+extension TeamAdapter: ParserEncoderType {
 
     public static func encode(model model: Parsable?) -> ParsedType? {
         guard let model = model else {
             return nil
         }
         var dictionary = [String: Int]()
-        dictionary["number"] = model.number
-        dictionary["combat_power"] = model.combatPower
-
         #if os(Linux)
-            return JSON(dictionary as Any)
+            var json = JSON(dictionary as Any)
         #else
-            return JSON(dictionary as AnyObject)
+            var json = JSON(dictionary as AnyObject)
         #endif
+
+        json["name"].int = model.rawValue
+
+        return json
     }
 }

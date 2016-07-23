@@ -1,45 +1,44 @@
 //
-//  Party.swift
+//  Event.swift
 //  PokePartyShared
 //
-//  Created by Jaroslaw Gliwinski on 2016-07-22.
+//  Created by Jakub Tomanik on 23/07/16.
 //
 //
 
 import Foundation
 
-
-public struct Party {
+public struct Event {
 
     public let id: String?
     public let hash: String?
     public let name: String
-    public let leaderId: String
+    public let ownerId: String
     public let memberIds: [String]
 
-    public init(id: String? = nil, hash: String? = nil, name: String, leaderId: String, memberIds: [String]) {
+    public init(id: String? = nil, hash: String? = nil, name: String, ownerId: String, memberIds: [String]) {
         self.id = id
         self.hash = hash
         self.name = name
-        self.leaderId = leaderId
+        self.ownerId = ownerId
         self.memberIds = memberIds
     }
 }
 
 
-public struct DetailedParty {
-    
+public struct DetailedEvent {
+
     public let id: String?
     public let hash: String?
     public let name: String
-    public let leader: User
+    public let owner: User
     public let members: [User]
 
-    public init(id: String? = nil, hash: String? = nil, name: String, leader: User, members: [User]) {
+    public init(id: String? = nil, hash: String?, name: String, owner: User, members: [User]) {
         self.id = id
         self.hash = hash
         self.name = name
-        self.leader = leader
+        self.owner = owner
         self.members = members
     }
 }

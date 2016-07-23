@@ -9,12 +9,16 @@
 import Foundation
 
 
-public enum Team: String {
-    case Valor
-    case Mystic
-    case Instinct
+public enum Team: Int, CustomStringConvertible {
+    case valor
+    case mystic
+    case instinct
 
-//    public init?(raw: String) {
-//        self.init(rawValue: raw)
-//    }
+    public var description: String {
+        switch self {
+        case .valor: return "Valor"
+        case .mystic: return "Mystic"
+        case .instinct: return "Instinct"
+        }
+    }
 }

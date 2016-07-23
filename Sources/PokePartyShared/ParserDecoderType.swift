@@ -14,7 +14,7 @@ import Foundation
 public protocol ParserDecoderType: ParserType {
 
     static func parse(body body: PayloadType?) -> Parsable?
-    static func decode(raw raw: ParsedType) -> Parsable?
+    static func decode(raw raw: ParsedType?) -> Parsable?
 }
 
 public extension ParserDecoderType where ParsedType == JsonType {
