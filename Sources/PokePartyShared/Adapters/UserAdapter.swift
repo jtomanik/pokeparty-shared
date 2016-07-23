@@ -51,6 +51,7 @@ extension UserAdapter: ParserEncoderType {
             var json = JSON(dictionary as AnyObject)
         #endif
 
+        json["id"].string = model.id
         json["username"].string = model.username
         json["team"] = TeamAdapter.encode(model: model.team) ?? JSON.null
         json["level"].int = model.level
