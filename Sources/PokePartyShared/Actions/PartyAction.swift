@@ -36,13 +36,13 @@ public enum PartyAction: Action {
     public var path: String {
         switch self {
         case .create:
-            return PokePartyAction.signup.path + "/create"
+            return PokePartyAction.party.path + "/create"
         case .join:
-            return PokePartyAction.signup.path + "/join"
+            return PokePartyAction.party.path + "/join"
         case .details:
-            return PokePartyAction.signup.path + "/details"
+            return PokePartyAction.party.path + "/details"
         case .update:
-            return PokePartyAction.signup.path + "/update"
+            return PokePartyAction.party.path + "/update"
         }
     }
 
