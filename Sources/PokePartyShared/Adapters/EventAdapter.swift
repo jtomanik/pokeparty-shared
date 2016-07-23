@@ -21,12 +21,15 @@ public struct EventAdapter: ParserDecoderType {
             return nil
         }
         if let name = raw["name"].string,
+            let description = raw["description"].string,
+            let latitude = raw["latitude"].double,
+            let longitude = raw["longitude"].double,
             let ownerId = raw["owner_id"].string {
             let id = raw["id"].string
             let hash = raw["hash"].string
             let memberIds = raw["members_ids"].array?.flatMap { $0.string } ?? [String]()
 
-            return Event(id: id, hash: hash, name: name, ownerId: ownerId, memberIds: memberIds)
+            return Event(id: id, hash: hash, name: name, description: description, latitude: latitude, longitude: longitude, ownerId: ownerId, memberIds: memberIds)
         } else {
             //Log.debug(AdapterError.parserFailedDecoding)
             return nil
@@ -48,6 +51,9 @@ extension EventAdapter: ParserEncoderType {
         #endif
 
         json["name"].string = model.name
+        json["description"].string = model.description
+        json["latitude"].double = model.latitude
+        json["longitude"].double = model.longitude
         json["owner_id"].string = model.ownerId
         json["id"].string = model.id
         json["hash"].string = model.hash

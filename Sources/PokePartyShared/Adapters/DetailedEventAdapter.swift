@@ -21,12 +21,15 @@ public struct DetailedEventAdapter: ParserDecoderType {
             return nil
         }
         if let name = raw["name"].string,
+            let description = raw["description"].string,
+            let latitude = raw["latitude"].double,
+            let longitude = raw["longitude"].double,
             let owner = UserAdapter.decode(raw: raw["owner"]) {
             let id = raw["id"].string
             let hash = raw["hash"].string
             let members = raw["members"].array?.flatMap { UserAdapter.decode(raw: $0) } ?? [User]()
 
-            return DetailedEvent(id: id, hash: hash, name: name, owner: owner, members: members)
+            return DetailedEvent(id: id, hash: hash, name: name, description: description, latitude: latitude, longitude: longitude, owner: owner, members: members)
         } else {
             //Log.debug(AdapterError.parserFailedDecoding)
             return nil
@@ -48,6 +51,9 @@ extension DetailedEventAdapter: ParserEncoderType {
         #endif
 
         json["name"].string = model.name
+        json["description"].string = model.description
+        json["latitude"].double = model.latitude
+        json["longitude"].double = model.longitude
         json["owner"] = UserAdapter.encode(model: model.owner) ?? JSON.null
         json["id"].string = model.id
         json["hash"].string = model.hash
